@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>Document</title>
+<link rel="stylesheet" href="../css/reset.css">
+<style>
+#main {width: 100%;}
+#main:after {content: ""; display: block; clear: both;}
+section {width: 100%; display: flex; overflow: hidden;}
+section:after {content: ""; display: block; clear: both;}
+section a {width: 50%; min-height:100vh; transition:width .8s cubic-bezier(.36,.33,0,1); position: relative; text-align: center;}
+section a .bg {opacity: 0; width: 100%; height: 100%; transition: opacity .9s cubic-bezier(.36,.33,0,1); position: absolute; top: 0; left: 0;}
+section a:first-child {background: #eba13d;}
+section a:first-child .bg {background: url('../img/img_food_1200x1200.jpg') center center no-repeat; background-size: cover;}
+section a:last-child .bg {background: url('../img/img_book.jpg') center center no-repeat; background-size: cover;}
+section a:hover {width: 75%;}
+section a:hover .bg {opacity: 1; transform: scale(1.02);}
+section a span {font-size: 60px;color: #b42638; font-weight: 600; position: absolute; top: 50%; left: 0; display: block; width: 100%; margin-top: -11px;}
+
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+<div id="main">
+	<section>
+		<a href="javascript:;">
+			<div class="bg"></div>
+			<span>britney spears</span>
+		</a>
+		<a href="javascript:;">
+			<div class="bg"></div>
+			<span>christina aguilera</span>
+		</a>
+	</section>
+</div>
+
+
+</body>
+</html>
